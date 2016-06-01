@@ -1,3 +1,33 @@
-<h1> Welcome to Ember! </h1>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand">{{#link-to 'application'}}HlthyBld{{/link-to}}</a>
+    </div>
 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li>{{#link-to 'foundations'}}9 Foundations{{/link-to}}</li>
+        <li>{{#link-to 'about'}}About Us{{/link-to}}</li>
+        <li>{{#link-to 'login'}}Log In{{/link-to}}</li>
+        <li>{{#link-to 'signup'}}Sign Up{{/link-to}}</li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- Begin page content -->
 {{outlet}}
+
+<footer class="footer">
+  <div class="container">
+    <p class="text-muted">Harvard Sensors for Health 2016</p>
+  </div>
+</footer>
